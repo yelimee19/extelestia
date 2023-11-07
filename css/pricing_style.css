@@ -191,7 +191,7 @@ footer .wrap .social a{
     }
 
 }
-@media screen and (max-width:411px) {
+@media screen and (max-width:540px) {
     html{
         font-size: 14px;
     }
