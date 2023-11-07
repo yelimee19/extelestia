@@ -78,6 +78,7 @@ main button{
     font-family: 'Unna', serif;
     cursor: pointer;
     transition: 0.3s;
+    text-align: center;
 
 }
 main button:hover{
