@@ -370,7 +370,7 @@ footer .wrap .social a{
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:540px) {
     header nav .menu{
         display: none;
     }
