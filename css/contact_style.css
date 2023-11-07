@@ -172,7 +172,8 @@ margin: 3vh 0;
 
 }
 footer .wrap img{
-width: 10%;
+width: 60%;
+    margin:auto;
 margin-bottom: 3vh;
 }
 footer .wrap ul li{
