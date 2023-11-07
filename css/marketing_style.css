@@ -1,0 +1,289 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+/*
+font-family: 'Girassol', serif;
+font-family: 'Imbue', serif;
+font-family: 'Unna', serif;
+font-family: 'Magra', sans-serif;
+*/
+*{
+    transition: 0.3s;
+}
+html{
+    font-size: 30px;
+}
+body{background-color: black;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 16vh;
+    background-color:rgb(0, 0, 0);
+}
+header button{
+    display: none;
+}
+header nav{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Girassol', serif;
+}
+
+header nav h1 span{
+    font-size: 0;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Imbue', serif;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+.fatline{
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background-color: white;
+    display: block;
+}
+
+/**/
+
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+    justify-content: center
+    ;
+
+}
+section h2{
+    font-family: 'Imbue', serif;
+    font-size: 1.4rem;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 100%;
+
+
+}
+section .box{
+    width: 48%;
+    height: fit-content;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1vh 0.4vh;
+    position: relative;
+    box-sizing: border-box;
+
+
+}
+
+section .box h3{
+    margin: 2vh 0;
+}
+section .dollar{
+    font-family: 'Magra', sans-serif;
+    margin-right: 2vw;
+}
+section .price{
+    font-size: 4rem;
+    font-family: 'Magra', sans-serif;
+}
+section .month{
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+section .line{
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 1vh auto;
+    margin-bottom: 3vh;
+}
+section button{
+    width: 70%;
+    height: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-top: 2vh;
+    font-size: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 1vh;
+    transform: translateX(-50%)
+}
+section button:hover{
+    background-color: white;
+    color: black;
+}
+
+section .box ul li{
+    font-size: 0.8rem;
+    margin: 2vh 0;
+}
+section .platinum ul li{
+    font-size: 0.6rem;
+}
+.leadgeneration{
+    display: flex;
+    justify-content: start;
+}
+.leadgeneration div{
+    width: 48%;
+    height:fit-content;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1vh 0.4vh;
+    padding-top: 2vh;
+    position: relative;
+    box-sizing: border-box;
+}
+.leadgeneration p{
+    font-size: 0.7rem;
+}
+.leadgeneration .commission{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.consultation{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    color: black;
+
+}
+.consultation h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    padding-top: 9.75vh;
+}
+.consultation input{
+    display: block;
+    width: 100%;
+    max-width: 70%;
+    height: 4vh;
+    margin: 3.66vh auto;
+    display: block;
+    font-size: 0.66rem;
+    font-family: 'Unna', serif;
+    padding-left: 0.5rem ;
+}
+.consultation button{
+    width: 21vw;
+    height: 5.5vh;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    font-family: 'Unna', serif;
+    cursor: pointer;
+}
+.consultation button:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+
+}
+footer .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9.75vh 0;
+    
+
+}
+footer .wrap img{
+    margin-bottom: 7.3vh;
+}
+footer .wrap ul li{
+    margin-bottom: 6.1vh;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Girassol', serif;
+
+}
+footer .wrap .social{
+    display: flex;
+
+}
+footer .wrap .social a{
+    margin: 0 1.4vw;
+}
+
+@media screen and (max-width:1366px) {
+    html{
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width:1200px ) {
+    html{
+        font-size: 22px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    html{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:411px) {
+    html{
+        font-size: 14px;
+    }
+    
+    section .box{
+        width: 100%;
+    }
+    .leadgeneration div{
+        width: 100%;
+    }
+    .leadgeneration div p{
+        margin-bottom: 1rem;
+    }
+    header nav .menu{
+        display: none;    
+    }
+    footer{
+        height: fit-content;
+    }
+    footer .wrap ul li{
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,392 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*
+font-family: 'Girassol', serif;
+font-family: 'Imbue', serif;
+font-family: 'Unna', serif;
+*/
+*{
+    transition: 0.3s;
+}
+html{
+    font-size: 30px;
+}
+body{background-color: black;}
+header{
+    width: 100%;
+    height: 16vh;
+    background-color:rgb(0, 0, 0);
+}
+header button{
+    display: none;
+}
+header nav{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Girassol', serif;
+}
+
+header nav h1 span{
+    font-size: 0;
+}
+main{
+    width: 100%;
+    height: 94vh;
+    background-image: url(../image/nightskybg.png);
+    padding-top: 11.75vh;
+}
+main .welcome{
+    color: white;
+    font-family: 'Imbue', serif;
+    font-size: 6rem;
+    margin-left: 23vw;
+}
+main .to{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Imbue', serif;
+    position: absolute;
+    top:44vh;
+    left: 37.7vw;
+}
+
+main .image img{
+    scale:80%;
+    margin-left: 27vw;
+    position: relative;
+
+}
+main button{
+    width: 17.3vw;
+    height: 6.1vh;
+    display: block;
+    margin: 3.66vh auto;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: large;
+    border-radius: 0.6rem;
+    font-family: 'Unna', serif;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+main button:hover{
+    background-color: white;
+    color: black;
+}
+.intro{
+    width: 100%;
+    height: 134.15vh;
+    background-image: url(../image/nightskybg.png);
+    color: white;
+    text-align: center;
+}
+.intro h2{
+    font-family: 'Imbue', serif;
+    font-size: 4.3rem ;
+}
+.intro p{
+    font-family: 'Unna', serif;
+    font-size: 1rem;
+    line-height: 140%;
+    margin-top: 3.66vh;
+}
+.services{
+    width: 100%;
+    background-color: white;
+    padding: 10vh 0;
+}
+.services h2{
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    margin-bottom: 10vh;
+}
+.services .box{
+    width: 30%;
+    margin: 3% 1%;
+    position: relative;
+}
+.services .box img{
+    width: 100%;
+}
+.services .box h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+
+    font-weight: 600;
+
+}
+.services .box span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0 ;
+    left: 0;
+}
+.services .all{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(42, 42, 42);
+} 
+.ph2{
+    font-size: 3.3rem;
+    font-family: 'Girassol', serif;
+    text-align: center;
+    margin: 6.1vh 0;
+    color: white;
+}
+.plans{
+    width: 100%;
+    padding-bottom: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.plans .planbox{
+    width: 23%;
+    height: 97.6vh;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 1rem;
+}
+.plans .planbox h3{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    margin: 2.4vh 0;
+}
+.consultation{
+    width: 100%;
+    height: 73.2vh;
+    background-color: white;
+    color: black;
+}
+.consultation h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    padding-top: 9.75vh;
+}
+.consultation input{
+    display: block;
+    width: 100%;
+    max-width: 70%;
+    height: 4vh;
+    margin: 3.66vh auto;
+    display: block;
+    font-size: 0.66rem;
+    font-family: 'Unna', serif;
+    padding-left: 0.5rem ;
+}
+.consultation button{
+    width: 21vw;
+    height: 5.5vh;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    font-family: 'Unna', serif;
+    cursor: pointer;
+}
+.consultation button:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+
+}
+footer .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9.75vh 0;
+    
+
+}
+footer .wrap img{
+    margin-bottom: 7.3vh;
+}
+footer .wrap ul li{
+    margin-bottom: 6.1vh;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Girassol', serif;
+
+}
+footer .wrap .social{
+    display: flex;
+
+}
+footer .wrap .social a{
+    margin: 0 1.4vw;
+}
+
+@media screen and (max-width:1200px){
+    main .image img{
+        scale: 0.7;
+        margin-left: 10vw;
+    
+    }
+    main .welcome{
+        color: white;
+        font-family: 'Imbue', serif;
+        font-size: 6rem;
+        margin-left:15vw;
+    }
+    main .to{
+        color: white;
+        font-size: 3.2rem;
+        font-family: 'Imbue', serif;
+        position: absolute;
+        top: 45vh;
+        left: 40vw;
+    }
+    main .image img{
+        margin-top: -3vh;
+    }
+    .intro{
+        height: 80vh;
+    }
+    .intro p{
+        font-family: 'Unna', serif;
+        font-size: 2.5vh;
+        line-height: 140%;
+        margin-top: 3.66vh;
+    }
+
+    .intro h2{
+        font-family: 'Imbue', serif;
+        font-size: 8vh ;
+    }
+    footer span{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    html{
+        font-size: 25px;
+    }
+    main .to{
+        top: 43vh;
+    }
+    .intro p{
+        font-size: 0.8rem;
+    }
+    .consultation{
+        height: 55vh;}
+    footer{
+    height: 60vh;
+}
+footer .wrap{
+ margin: 1vh 0;
+    
+
+}
+footer .wrap img{
+    scale: 80%;
+    margin-bottom: 2.3vh;
+}
+footer .wrap ul li{
+    margin-bottom: 1.8vh;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Girassol', serif;
+
+}
+footer .wrap .social{
+    display: flex;
+
+}
+footer .wrap .social img{
+    scale: 60%;
+}
+footer .wrap .social a{
+    margin: 0 0.1vw;
+}
+}
+@media screen and (max-width:767px) {
+    main .to{
+        top: 41vh;
+        font-size:8vh ;
+    }
+    main .image img{
+        margin-top: 1vh;
+        position: relative;
+    
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    header nav .menu{
+        display: none;
+    }
+    main{
+        padding-top:0;
+        height: 50vh;
+    }
+    
+    main .to{
+        display: none;
+
+    }
+    main .image{
+        display: none;
+    }
+    main .welcome{
+        margin-left: 0;
+        text-align: center;
+    }
+    .intro p{
+        font-size: 0.8rem;
+    }
+    .services .box{
+        width: 80%;
+    }
+    .plans{
+        flex-direction: column;
+    }
+    .plans .planbox{
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        margin-bottom: 1vh;
+    }
+
+}
+    
